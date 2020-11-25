@@ -1,11 +1,22 @@
-<div>
-    <h1><a href="/">Django Girls Blog</a></h1>
-</div>
+<html>
+    <head>
+        <title>Django blog</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">Django Blog</a></h1>
+        </div>
 
-{% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h2><a href="">{{ post.title }}</a></h2>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
-{% endfor %}
+        <div>
+            <p>published: 25.11.2020, 19:05</p>
+            <h2><a href="">My first post</a></h2>
+            <p>The biggest battle is the war against ignorance.</p>
+        </div>
+
+        <div>
+            <p>published: 25.11.2020, 19:05</p>
+            <h2><a href="">My second post</a></h2>
+            <p>Victory is for those who can say “Victory is mine”. Success is for those who can begin saying “I will succeed.” and say “I have succeeded.” in the end.</p>
+        </div>
+    </body>
+</html>
